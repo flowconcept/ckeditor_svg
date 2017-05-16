@@ -1,0 +1,9 @@
+ckeditor_svg.svg_dialog:
+  path: '/ckeditor_svg/dialog/svg/{filter_format}'
+  defaults:
+    _form: '\Drupal\ckeditor_svg\Form\EditorSvgDialog'
+    _title: 'Upload file'
+  requirements:
+    _entity_access: 'filter_format.use'
+  options:
+    _theme: ajax_base_page

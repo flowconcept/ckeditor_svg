@@ -1,0 +1,7 @@
+name: CKEditor SVG plugin
+type: module
+description: This plugin allows file uploading SVG images
+core: 8.x
+package: Site
+version: VERSION
+dependencies:

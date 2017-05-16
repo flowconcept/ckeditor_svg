@@ -1,0 +1,13 @@
+{
+  "name": "flowconcept/ckeditor_svg",
+  "description": "Views display plugin with isotope integration.",
+  "version": "master",
+  "type": "drupal-module",
+  "homepage": "https://github.com/flowconcept/ckeditor_svg",
+  "support": {
+    "issues": "https://github.com/flowconcept/ckeditor_svg/issues"
+  },
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": { }
+}
