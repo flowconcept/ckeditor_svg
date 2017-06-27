@@ -101,7 +101,7 @@ class EditorSvgDialog extends FormBase {
       '#field_name' => 'drupalsvg',
       '#title' => $this->t('File'),
       '#type' => 'managed_file',
-      '#upload_location' => $config['scheme'] . '://' . 'inline-svg',
+      '#upload_location' => 'public://inline-svg',
       '#default_value' => $fid ? array($fid) : NULL,
       '#upload_validators' => array(
         'file_validate_extensions' => array('svg'),
