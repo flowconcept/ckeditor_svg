@@ -44,7 +44,7 @@ class EditorSvgDialog extends FormBase {
    */
   public static function create(ContainerInterface $container) {
     return new static(
-      $container->get('entity.manager')->getStorage('file')
+      $container->get('entity_type.manager')->getStorage('file')
     );
   }
 
@@ -94,7 +94,7 @@ class EditorSvgDialog extends FormBase {
       $config = $settings['plugins']['drupalsvg'];
     }
 
-    $existing_file = isset($file_element['data-entity-uuid']) ? \Drupal::entityManager()->loadEntityByUuid('file', $file_element['data-entity-uuid']) : NULL;
+    $existing_file = isset($file_element['data-entity-uuid']) ? \Drupal::service('entity_type.manager')->loadEntityByUuid('file', $file_element['data-entity-uuid']) : NULL;
     $fid = $existing_file ? $existing_file->id() : NULL;
 
     $form['fid'] = array(
